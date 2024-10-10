@@ -68,6 +68,11 @@ h1 {
     color: #0056b3;
 }
 
+#logo{
+    border-radius: 100%;
+    
+}
+
 /* Responsive: Vista en pantallas pequeñas */
 @media (max-width: 768px) {
     .book-list {
@@ -99,4 +104,20 @@ h1 {
     #search {
         width: 100%;
     }
-}
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+    }
+    
+    .logo-container {
+        opacity: 0; /* Comenzar oculto */
+        
+    }
+
+   
+}    

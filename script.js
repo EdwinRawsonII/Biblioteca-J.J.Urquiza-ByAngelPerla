@@ -44,3 +44,25 @@ function initLibrary() {
 
 // Inicializar la biblioteca cuando la página haya cargado completamente
 document.addEventListener('DOMContentLoaded', initLibrary);
+
+//animacion date
+window.onload = function() {
+    const logo = document.getElementById('logo');
+    const logoContainer = document.querySelector('.logo-container');
+
+    // Animación usando GSAP
+    gsap.to(logoContainer, {
+        duration: 1,
+        opacity: 1,
+        y: -50, // Mover hacia arriba
+        ease: 'power1.out'
+    });
+
+    gsap.to(logo, {
+        duration: 1,
+        scale: 1.2,
+        yoyo: true,
+        repeat: -1,
+        ease: 'power1.inOut'
+    });
+};
