@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Biblioteca Virtual Escuela de Música J.J. Urquiza</h1>
+    <h2>Victoria Entre Rios</h2>
+
+    <!-- Filtro de categorías -->
+    <label for="category">Filtrar por categoría:</label>
+    <select id="category" onchange="filterByCategory()">
+        <option value="all">Todas las categorías</option>
+        <option value="ficcion">Ficción</option>
+        <option value="no-ficcion">No Ficción</option>
+        <option value="ciencia">Ciencia</option>
+        <option value="Piano">Piano</option>
+    </select>
+
+    <!-- Cuadro de búsqueda -->
+    <input type="text" id="search" placeholder="Buscar un libro..." onkeyup="searchBooks()">
+
+    <div class="book-list" id="book-list">
+        <div class="book" data-title="1° Primer Album Cecilia" data-category="Piano">
+            <h2>1° Primer Album Cecilia</h2>
+            <p><a href="https://drive.google.com/file/d/1tEvrwfr1EWh_QMt_53C9hnWTxz87JxC7/view?usp=drive_link" target="_blank">Leer</a></p>
+        </div>
+        <div class="book" data-title="2° Segundo Album Cecilia" data-category="Piano">
+            <h2>2° Segundo Album Cecilia</h2>
+            <p><a href="https://drive.google.com/file/d/1fcV5yOYkitvZcqMrZFJ57znbO65DUOBQ/view?usp=drive_link" target="_blank">Leer</a></p>
+        </div>
+        <div class="book" data-title="Libro de Ciencia 1" data-category="ciencia">
+            <h2>Libro de Ciencia 1</h2>
+            <p><a href="https://drive.google.com/file/d/3ZZZZZ/view?usp=sharing" target="_blank">Leer</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
