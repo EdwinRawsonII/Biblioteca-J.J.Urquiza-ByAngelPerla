@@ -168,6 +168,18 @@ footer {
 
 /* Responsive: Vista en pantallas pequeñas */
 @media (max-width: 768px) {
+
+    #category, #search {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    body {
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
     .logo-container {
         opacity: 1; /* Asegura que sea visible en pantallas móviles */
     }
