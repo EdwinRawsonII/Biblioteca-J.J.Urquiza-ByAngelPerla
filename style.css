@@ -149,6 +149,7 @@ footer {
     }
 
     body {
+
         justify-content: center;
         align-items: center;
         background-color: #f0f0f0;
@@ -170,14 +171,21 @@ footer {
 @media (max-width: 768px) {
 
     #category, #search {
-        width: 100%;
+        width: 80%;
         max-width: 500px;
     }
+.book-list{
+    width: 90%;
+    max-width: 500px;
+}
 
     body {
+        display: flex;
+        flex-direction:column;
         justify-content: center;
         align-items: center;
         background-color: #f0f0f0;
+
     }
 
     .logo-container {
@@ -188,4 +196,8 @@ footer {
         max-width: 100px; /* Ajusta el tamaño del logo para móviles */
         width: 80%; /* Ajusta la anchura para que se vea bien en móviles */
     }
+}
+.nav {
+    width: 80%;
+    max-width: 500px;
 }
